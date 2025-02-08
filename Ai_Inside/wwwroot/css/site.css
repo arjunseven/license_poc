@@ -1,0 +1,187 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Orange Button for Continue as GHOST */
+.btn-orange {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .btn-orange:hover {
+        background-color: #e69500;
+        transform: scale(1.05);
+    }
+
+/* Glow-on-hover for Register Button */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+.btn-orange,
+.glow-on-hover {
+    margin-bottom: 25px; /* Adjust spacing as needed */
+}
+/* Always Glowing Button */
+/* Button with Glow Effect Around Only */
+.glow-always {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent; /* Fully transparent button */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+    .glow-always:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(10px);
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        animation: glowing 10s linear infinite;
+        border-radius: 10px;
+    }
+
+    .glow-always:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8); /* Black background for button */
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    /* Click Effect */
+    .glow-always:active {
+        transform: scale(0.95);
+        color: #000;
+    }
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

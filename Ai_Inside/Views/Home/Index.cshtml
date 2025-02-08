@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mt-5">
+    <h1>Welcome to Ai Inside</h1>
+
+    <div class="card mt-4" style="width: 18rem; margin: auto; border: none; box-shadow: none;">
+        <div class="card-body" style="padding: 20px;">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <!-- Logged-in User -->
+                <a asp-controller="AI" asp-action="Index" class="btn-orange">Explore</a>
+            }
+            else
+            {
+                <!-- Guest User -->
+                <a href="/Identity/Account/Register" class="glow-always mb-3">Register</a>
+                <a asp-controller="AI" asp-action="Guest" class="btn-orange">Continue as GHOST 😈</a>
+            }
+        </div>
+    </div>
+</div>
