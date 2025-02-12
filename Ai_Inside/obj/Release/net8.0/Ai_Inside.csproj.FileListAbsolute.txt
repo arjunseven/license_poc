@@ -1,0 +1,10 @@
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.csproj.AssemblyReference.cache
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.AssemblyInfoInputs.cache
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.AssemblyInfo.cs
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.csproj.CoreCompileInputs.cache
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.RazorAssemblyInfo.cache
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.RazorAssemblyInfo.cs
+C:\Users\z004m0ef\source\repos\Ai_Inside\Ai_Inside\obj\Release\net8.0\Ai_Inside.sourcelink.json

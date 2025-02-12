@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Confirm Purchase";
+    int pricePerYear = ViewBag.SelectedPlan == "Standard" ? 1000 : 2500;
+    int totalPrice = pricePerYear * ViewBag.Years;
+}
+
+<div class="container text-center mt-5">
+    <h2>Confirm Your Purchase</h2>
+    <p>
+        You have selected the <strong>@ViewBag.SelectedPlan</strong> plan for <strong>@ViewBag.Years</strong> years.
+    </p>
+    <p>
+        <strong>Total Price:</strong> $@totalPrice
+    </p>
+
+    <form asp-controller="License" asp-action="CompletePurchase" method="post">
+        <input type="hidden" name="plan" value="@ViewBag.SelectedPlan" />
+        <input type="hidden" name="years" value="@ViewBag.Years" />
+        <button type="submit" class="btn btn-primary">Confirm Purchase</button>
+    </form>
+
+    <br />
+    <a asp-action="ChoosePlan" class="btn btn-secondary">Go Back</a>
+</div>

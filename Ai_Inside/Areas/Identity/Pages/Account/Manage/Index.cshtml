@@ -23,6 +23,41 @@
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
     </div>
+    <hr />
+
+   @*  <h3>My Purchases</h3>
+
+    @if (Model.Purchases != null && Model.Purchases.Any())
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Years</th>
+                <th>Total Price</th>
+                <th>License Key</th>
+                <th>Expiry Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var purchase in Model.Purchases)
+            {
+                <tr>
+                    <td>@purchase.Plan</td>
+                    <td>@purchase.Years</td>
+                    <td>$@purchase.TotalPrice</td>
+                    <td>@purchase.LicenseKey</td>
+                    <td>@purchase.ExpiryDate.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>You have not purchased any licenses yet.</p>
+    }
+ *@
 </div>
 
 @section Scripts {

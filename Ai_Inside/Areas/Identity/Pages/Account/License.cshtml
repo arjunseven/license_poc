@@ -1,0 +1,19 @@
+﻿@page
+@model Ai_Inside.Areas.Identity.Pages.Account.LicenseModel
+@{
+    ViewData["Title"] = "Purchase License";
+}
+
+<h2>Purchase License</h2>
+
+<form method="post">
+    <div>
+        <label>Select a License Plan:</label>
+        <select asp-for="SelectedPlan">
+            <option value="Basic">Basic - $10/month</option>
+            <option value="Pro">Pro - $20/month</option>
+            <option value="Premium">Premium - $30/month</option>
+        </select>
+    </div>
+    <button type="submit">Purchase</button>
+</form>

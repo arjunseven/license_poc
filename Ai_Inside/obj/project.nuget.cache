@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lxMRFyS9NmVEutI7IhDiE/JO+TbMIl6CdNeEUsT1IAZR7aCLURacJ9DJxSBHyTgjtswjq+hgc2VxL6KUYxsU2g==",
+  "dgSpecHash": "nPcaxyE1OUu8lcOYmdu37IRIQGwZcv9fWhjCJuc+WP+9tA2Yc9QdUSVjq2ygqdLqxdR+GKyTCBV0VNLm8uR0/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\z004m0ef\\source\\repos\\Ai_Inside\\Ai_Inside\\Ai_Inside.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\z004m0ef\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\z004m0ef\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\z004m0ef\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\z004m0ef\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\z004m0ef\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\z004m0ef\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

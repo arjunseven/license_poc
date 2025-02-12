@@ -1,26 +1,24 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
+@inject SignInManager<ApplicationUser> SignInManager
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center mt-5">
-    <h1>Welcome to Ai Inside</h1>
+<div class="container text-center mt-5">
+    <h3>Get started by purchasing a license.</h3>
 
-    <div class="card mt-4" style="width: 18rem; margin: auto; border: none; box-shadow: none;">
-        <div class="card-body" style="padding: 20px;">
-            @if (SignInManager.IsSignedIn(User))
-            {
-                <!-- Logged-in User -->
-                <a asp-controller="AI" asp-action="Index" class="btn-orange">Explore</a>
-            }
-            else
-            {
-                <!-- Guest User -->
-                <a href="/Identity/Account/Register" class="glow-always mb-3">Register</a>
-                <a asp-controller="AI" asp-action="Guest" class="btn-orange">Continue as GHOST 😈</a>
-            }
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <a asp-controller="License" asp-action="ChoosePlan" class="btn btn-primary">Purchase License</a>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            You must be <strong>logged in</strong> to purchase a license.
+            <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-link">Register here</a>
+            or
+            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-link">Login</a>.
         </div>
-    </div>
+    }
 </div>
